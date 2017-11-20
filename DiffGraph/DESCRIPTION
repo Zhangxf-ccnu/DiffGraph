@@ -1,0 +1,13 @@
+Package: DiffGraph
+Type: Package
+Title: DiffGraph: An R Package for Identifying Gene Network Rewiring
+        using Differential Graphical Models
+Version: 1.1.0
+Author: Xiao-Fei Zhang
+Maintainer: Xiao-Fei Zhang  <zhangxf@mail.ccnu.edu.cn>
+Description: We develop DiffGraph, an R package that integrates four influential differential graphical models for identifying gene network rewiring between two different conditions from gene expression data.  The input and output of different models are packaged in the same format, making it convenient for users to compare different models using a wide range of datasets and carry out follow-up analysis. Furthermore, the inferred differential networks are visualized in both non-interactive and interactive manners. The package is useful for identifying gene network rewiring from an input dataset, comparing the predictions of different well-established methods, and visualizing the results.
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Depends: R (>= 2.10), igraph, MASS, Matrix
+Packaged: 2017-09-07 14:23:28 UTC; zhangxf
