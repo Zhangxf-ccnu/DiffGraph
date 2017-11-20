@@ -1,6 +1,0 @@
-export(Dtrace, FGL, pDNA, PNJGL)
-import(igraph)
-import(MASS)
-import(Matrix)
-
-importFrom("stats", "cor", "cov")
