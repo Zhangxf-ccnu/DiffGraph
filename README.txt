@@ -1,27 +1,24 @@
-README file for R package supporting the paper "DiffGraph: An R package for identifying gene network rewiring using differential graphical models".
-
+README file for R package supporting the paper: Xiao-Fei Zhang, Le Ou-Yang*, Shuo Yang, Xiaohua Hu, Hong Yan, DiffGraph: an R package for identifying gene network rewiring using differential graphical models, Bioinformatics, 2018,34(9): 1571-1573. 
 
 Contents of this archive
 ------------------------
 This archive contains 
-(1) DiffGraph_1.1.1.tar: Package source. 
+(1) pkg: subdirectory that contains the R package. 
 (2) DiffGraph-manual.pdf: Reference manual.
 (3) example.R: Examples for step by step usages for the DiffGraph package.
 
-The DiffGraph pacakge depends on the following existing packages. To use them, simply
-library('igraph')
-library('MASS')
-library('Matrix')
-If you don't have these packages, simply use
-install.packages("igraph")
-install.packages("MASS")
-install.packages("Matrix")
+The DiffGraph package has the following R-package dependencies: igraph, MASS, Matrix. The dependent packages will be automatically installed 
+along with DiffGraph. You can use the following commands to install DiffGraph from GitHub.
 
-Install the DiffGraph pacakge:
-Download the package source from https://github.com/Zhangxf-ccnu/DiffGraph 
-and then install the package using the following command:
-install.packages("path/DiffGraph_1.1.1.tar.gz", type = "source")
-where "path" is the path where the "DiffGraph_1.1.1.tar.gz" is located.
+Step 1. If the devtools package has been not installed, install the devtools package first. Invoke R and then type
+install.packages("devtools")
+
+Step 2. Load the devtools package.
+library("devtools")
+
+Step 3. Install the DiffGraph package from GitHub.
+install_github("Zhangxf-ccnu/DiffGraph", subdir="pkg")
+
 
 Useage
 Load the library DiffGraph in R console, by running:
